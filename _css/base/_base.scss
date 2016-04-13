@@ -1,0 +1,53 @@
+* {
+     font-family: "San Francisco", "Heveltica-Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+     font-size: 32px;   
+}
+
+h2 {
+     margin-top: 0px;  
+     font-size: 24px;
+}
+
+h3 {
+    color: #444444;
+    font-size: 19px;
+}
+
+p + h2 {
+     margin-top: 0.83em;   
+}
+
+a {
+     color: #AE1607;   
+}
+
+body.schedule {
+     h2 {
+          margin-bottom: 0px;
+         & + table {
+              margin-top: 18px;   
+         }
+     }
+     h3 {
+          margin-top: 10px;
+          color: #444444;
+          margin-bottom: 0px;
+     }
+}
+
+main {
+    ol {
+         li {
+              color: #000000;
+              font-weight: 800;
+              p {
+                  color: #444444;
+                  font-weight: normal;
+                  text-indent: 0px;
+              }
+         }
+    }
+}

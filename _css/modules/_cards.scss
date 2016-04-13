@@ -1,0 +1,83 @@
+section.cards {
+     background-color: transparent;   
+     box-shadow: none;
+     padding: 0px;
+     div.card {
+          background-color: #ffffff;
+          box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+          margin-bottom: 16px;
+          width: 49%;
+          float: left;
+          margin-right: 2%;
+          &:nth-child(2n) {
+               margin-right: 0px;   
+          }
+           &:last-of-type {
+                margin-bottom: 0px;   
+           }
+           &:nth-of-type(5n) {
+                margin-bottom: 0px;   
+           }
+         figure {
+              width: 64px;
+              height: 64px;
+              margin: 16px;
+              float: left;
+              border-radius: 50%;
+              background-color: #eeeeee;
+              &.striking {
+                   background-image: url(../_images/style_striking.png);
+                   background-size: cover;
+              }
+              &.self_defense {
+                   background-image: url(../_images/style_self_defense.png);
+                   background-size: cover;
+              }
+              &.grappling {
+                   background-image: url(../_images/style_grappling.png);
+                   background-size: cover;
+              }
+              &.weapons {
+                   background-image: url(../_images/style_weapons.png);
+                   background-size: cover;
+              }
+              &.competition {
+                   background-image: url(../_images/style_competition.png);
+                   background-size: cover;
+              }
+              &.fitness {
+                   background-image: url(../_images/style_fitness.png);
+                   background-size: cover;
+              }
+         }
+          h2 {
+              padding: 8px 16px 0px;
+              font-size: 18px;
+              margin: 0px;
+              line-height: 26px;
+          }
+          p {
+               padding: 0px 16px 8px;  
+              font-size: 12px;
+              margin: 0px;
+              line-height: 20px; 
+              text-indent: 0px;
+          }
+     }
+}
+
+@media screen and (max-width: 767px) {
+     section.cards {
+          div.card {
+               width: 100%;
+               float: none;
+               margin-right: 0px;
+               &:nth-child(2n) {
+                    margin-right: 0px;   
+               }
+               &:nth-of-type(5n) {
+                    margin-bottom: 16px;   
+               }
+          }
+     }
+}

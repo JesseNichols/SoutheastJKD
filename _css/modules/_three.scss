@@ -1,0 +1,126 @@
+div.m_three {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    div.container {
+        div {
+            &.one {
+                &:hover {
+                    figure {
+                        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../_images/about_background.jpg);
+                        background-size: cover;
+                    }
+                }
+                figure {
+                    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../_images/about_background.jpg);
+                    background-size: cover;
+                }
+            }
+            &.two {
+                &:hover {
+                    figure {
+                        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../_images/schedule_background.jpg);
+                        background-size: cover;
+                    }
+                }
+                figure {
+                    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../_images/schedule_background.jpg);
+                    background-size: cover;
+                }
+            }
+            &.three {
+                &:hover {
+                    figure {
+                        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../_images/contact_background.png);
+                        background-size: cover;
+                    }
+                }
+                figure {
+                    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../_images/contact_background.png);
+                    background-size: cover;
+                }
+            }
+            width: 300px;
+            float: left;
+            box-shadow: 0px 2px 4px #808080;
+            figure {
+                margin: 0px;
+                padding: 0px;
+                img {
+                    display: block;
+                    width: 104px;
+                    margin: 0px auto;
+                    padding: 48px 0px;
+                }
+            }
+            p {
+                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-weight: 800;
+                text-transform: uppercase;
+                font-size: 24px;
+                line-height: 48px;
+                width: 100%;
+                display: block;
+                background-color: #ffffff;
+                color: #AE1607;
+                text-align: center;
+                text-indent: 0px;
+                @media 
+                (-webkit-min-device-pixel-ratio: 2), 
+                (min-resolution: 192dpi) { 
+                    font-family: Impact, Helvetica Neue, Helvetica, Arial, sans-serif;
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+    a + a div {
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    div.m_three {
+        margin-top: 16px;
+        margin-bottom: 0px;
+        width: auto;
+        padding: 0px;
+        div.container {
+            padding: 0px 32px;
+            a {
+                div {
+                    width: 32%;
+                    figure {
+                        img {
+                            padding: 32px 0px;
+                        }
+                    }
+                    p {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        a + a div {
+            margin-left: 2%;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    header h1 {
+        display: none;
+    }
+    div.m_three {
+        div.container {
+            padding: 0px 16px;
+            a {
+                div {
+                    float: none;
+                    width: 100%;
+                    margin: 0px;
+                }
+            }
+            a + a div {
+                margin-top: 16px;
+            }
+        }
+    }
+}

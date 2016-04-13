@@ -1,0 +1,35 @@
+form.contact-form {
+     background-color: #444444;
+     padding: 24px;
+     border-radius: 5px;
+     float: right;
+     width: 46%;
+     &.footer {
+          width: 100%;
+          padding: 0px;
+     }
+     @media screen and (max-width: 767px) {
+          float: none;
+          width: 90%;
+          padding-left: 5%;
+          padding-right: 5%;
+          margin-bottom: 24px;
+          input[type="submit"] {
+               padding: 12px 0px;
+               font-size: 20px;
+               &:hover {
+                    cursor: pointer;
+               }
+          }
+     }
+     h2 {
+          color: #ffffff;
+          margin-bottom: 10px;
+     }
+     p {
+          color: #ffffff; 
+          font-size: 14px;
+          line-height: 1.2em;
+          margin-bottom: 10px;
+     }
+}
